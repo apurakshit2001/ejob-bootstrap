@@ -38,9 +38,11 @@
     font-family: 'Permanent Marker', cursive;
     font-weight: 0;
 }
-nav>h1{
+
+nav>h1 {
     font-size: 4rem !important;
 }
+
 nav {
     display: flex;
     justify-content: center;
@@ -100,13 +102,16 @@ p {
     .about_section .about_img img {
         margin: 3rem 0;
     }
-    .GalleryRow{
+
+    .GalleryRow {
         display: flex;
         flex-direction: column;
+        margin: 0 auto;
     }
-    .navbar-brand{
+
+    .navbar-brand {
         font-size: 1rem;
-     
+
     }
 }
 
@@ -116,24 +121,27 @@ p {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.img-fluid{
+.img-fluid {
     max-width: 100%;
     height: 300px;
     overflow: hidden;
     transition: 0.1s ease-in-out;
+    margin: 10px;
 }
 
-.img-fluid:hover{
+.img-fluid:hover {
     transition: 0.1s ease-in-out;
     transform: scale(1.1);
     width: 110%;
 }
-.col-lg-3>.lc-block{
+
+.col-lg-3>.lc-block {
     height: 300px;
     width: 300px;
     overflow: hidden;
 }
-.follow{
+
+.follow {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -144,61 +152,95 @@ p {
     box-shadow: 0 0 55px;
 
 }
-.follow>iframe{
-width: 50%;
-height: 70%;
+
+.follow>iframe {
+    width: 50%;
+    height: 70%;
 }
-.followHeading{
+
+.followHeading {
     font-family: 'Permanent Marker', cursive;
     font-size: 5rem;
     color: white;
 }
 
 
+@media(max-width:991px) {
+    .follow {
+        flex-direction: column-reverse;
+        height: 120vh;
+        border: 1px solid black;
+        box-shadow: 0 0 25px;
+        border-radius: 25px;
+     
+    }
+
+    .follow>iframe {
+        width: 100%;
+        height: 100%;
+        margin: 10px auto;
+    }
+
+    .img-fluid {
+        overflow: hidden;
+    }
+
+    .follow .button-71 {
+        padding: 16px 48px;
+        font-size: 20px;
+    }
+
+    .followHeading {
+        font-size: 2.5rem
+    }
+
+    body {}
+}
 
 /* CSS */
 .button-71 {
-  background-color: #0078d0;
-  border: 0;
-  border-radius: 56px;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
-  font-size: 50px;
-  font-weight: 600;
-  outline: 0;
-  padding: 16px 21px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  transition: all .3s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+    background-color: #0078d0;
+    border: 0;
+    border-radius: 56px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: system-ui, -apple-system, system-ui, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    outline: 0;
+    padding: 16px 21px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
 }
 
 .button-71:before {
-  background-color: initial;
-  background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
-  border-radius: 125px;
-  content: "";
-  height: 50%;
-  left: 4%;
-  opacity: .5;
-  position: absolute;
-  top: 0;
-  transition: all .3s;
-  width: 92%;
+    background-color: initial;
+    background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+    border-radius: 125px;
+    content: "";
+    height: 50%;
+    left: 4%;
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    transition: all .3s;
+    width: 92%;
 }
 
 .button-71:hover {
-  box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
-  transform: scale(1.05);
+    box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+    transform: scale(1.05);
 }
 
 @media (min-width: 768px) {
-  .button-71 {
-    padding: 16px 48px;
-  }
+    .follow .button-71 {
+        padding: 16px 48px;
+        font-size: 10px;
+    }
 }
